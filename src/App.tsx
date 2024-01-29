@@ -47,10 +47,6 @@ function App() {
 
 
 
-  const handlePrint = () => {
-    window.print();
-  }
-
   let name, value;
 
   const updateData = (e: any) => {
@@ -89,7 +85,7 @@ function App() {
           <>
           <div ref={componentRef} className='m-5'>
 
-            <Header handlePrint={handlePrint} />
+            <Header />
             <SlipBody slipNo={slipNo} date={date} />
             <TaskTable inputArr={inputArr} totalAmt={totalAmt} taxPer={taxPer} subTotal={subTotal}/>
             <Footer Bankdetail={Bankdetail} />
